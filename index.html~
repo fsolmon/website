@@ -1,0 +1,131 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">	
+	<!--	
+	Design by http://www.bluewebtemplates.com	
+		Released for free under a Creative Commons Attribution 3.0 License		
+		-->		
+		<html xmlns="http://www.w3.org/1999/xhtml">		
+		<head>		
+		<title>F.Solmon</title>		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />		
+		<link href="style.css" rel="stylesheet" type="text/css" />		
+		<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->		
+		<script type="text/javascript" src="js/cufon-yui.js"></script>		
+		<script type="text/javascript" src="js/arial.js"></script>		
+		<script type="text/javascript" src="js/cuf_run.js"></script>		
+		<!-- CuFon ends -->		
+		</head>		
+		<body>		
+		<div class="main">		
+				
+		  <div class="header">		
+		    <div class="header_resize">		
+		      <div class="logo"><h1><a href="index.html">Fabien Solmon</a></h1></div>		
+		      <div class="menu_nav">		
+		        <ul>		
+		          <li class="active"><a href="index.html">Home</a></li>		
+		          <li><a href="images/solmon_CV.pdf">CV</a></li>		
+		          <li><a href="research.html">Research</a></li> 
+                <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en">Publications</a></li>		
+
+		          <li><a href="model.html">Modelling</a></li>		
+		       
+		        </ul>		
+		      </div>		
+		      <div class="clr"></div>		
+		    </div>		
+		  </div>		
+				
+		  <div class="content">		
+		    <div class="content_resize">		
+		  
+	        
+	                
+	                <img style='position:relative;top100px;left:2px' src="images/enviro2.jpg" width="900" height="270" alt="pix" />
+                   
+
+ 	                
+	       
+	        
+		      <div class="mainbar">		
+	
+		        <div class="article">
+	
+		         <h2><span>Research Interests</span></h2>
+	
+		       
+	     	
+		             <b><span style="font-size: 20px;">Interactions between atmospheric chemistry, climate and biogeochemical cycles using modelling approaches.</span></b>
+	                <pre>  </pre> 
+		             <b><span style="font-size: 16px;">Examples of recent topics I have been working on:</span></b>
+	           <br />
+		             <li> The regional climatic impact of dust aerosol on thermodynamic and dynamics of Monsoon systems
+		              (West Africa and India) as well as particular sea basins (Caspian/Aral and Mediterranean regions)
+	
+		            <li> The direct and semi-direct effects of African biomass burning aerosol on southern African climate
+		                 and the south eastern Atlantic stratocumulus deck.
+	
+		            <li> The atmospheric processes impacting the deposition flux of key chemical elements to marine and
+		                 terrestrial ecosystems, with evaluation of their possible biogeochemical impacts
+		                 (North Pacific Ocean, West Africa and the Mediterranean basin)
+	
+		             <li> The Regional climate and land-use change effects on Ambrosia (ragweed) distribution
+		                  and pollen concentrations in Europe
+	
+		             <li> The tropospheric ozone cycle including the impact of biogenic emissions and climate change
+	
+		           </div>
+		        
+	            <div class="article">	
+	            <h2><span> </span> </h2>	             </div>
+	
+		        </div>
+	
+	
+	
+		        <div class="sidebar">		
+		        <div class="gadget">		
+		          <h2 class="star"><span>Contacts</h2>		
+		          <ul class="sb_menu">		             <span style="font-size: 16px;">
+		             
+		            
+		            <li><a href="www.ictp.it/research/esp.aspx"> Earth System Physics </a></li>		
+		            <li><a href="http://www.ictp.it"> ICTP </a></li>		            <li> Strada Costiera 11, Trieste, Italy<li>
+		            <li> email: fsolmonatictp.it </li>
+		            <li> phone: +390402240206 </li>		              </span >  
+	          </ul>		
+		        </div>		
+		        <div class="gadget">		
+		          <h2 class="star"><span> NEWS ! </span></h2>		
+		          <ul class="ex_menu">	            	<span style="font-size: 16px;">
+		            <li><a href=""http://indico.ictp.it/event/a14267/" >Forthcoming Workshop on wildfire modelling June 2015 </a></li>		
+		            <li><a href="http://indico.ictp.it/event/a13227/">4th ChArMEX workshop </a></li>		
+		             </span>
+		          </ul>		
+		        </div>		
+		      </div>		
+		      <div class="clr"></div>		
+		    </div>		
+		  </div>		
+		
+		
+		
+		
+		  <div class="footer">		
+		    <div class="footer_resize">		
+		      <p class="lf">&copy; Copyright MyWebSite. Designed by Blue <a href="http://www.bluewebtemplates.com">Website Templates</a></p>		
+		      <ul class="fmenu">		
+		        <li class="active"><a href="index.html">Home</a></li>		
+		        <li><a href="support.html">Support</a></li>		
+		        <li><a href="blog.html">Blog</a></li>		
+		        <li><a href="about.html">About Us</a></li>		
+		        <li><a href="contact.html">Contacts</a></li>		
+		      </ul>		
+		      <div class="clr"></div>		
+		    </div>		
+		  </div>		
+		</div>	
+	</body>	
+	</html>	
+	
+	
+	  
