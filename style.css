@@ -34,11 +34,11 @@ a { color:#81b436; text-decoration:underline;}
 .content_resize { padding-bottom:16px; background-color:#e4f4cd;}
 .content_resize { border-radius:12px; -moz-border-radius:12px; -webkit-border-radius:12px;}
 .content img.ctop { margin:20px 0 20px -20px;}
-.content .mainbar { float:left; width:630px;}
+.content .mainbar { float:left; width:800px;}
 .content .mainbar img { margin-bottom:24px; padding:4px; border:1px solid #b7b7b7; background-color:#fff;}
 .content .mainbar img.fl { float:left; margin-right:12px;}
 .content .mainbar .article, .content .sidebar .gadget { margin:0; padding:0 0 16px 0;}
-.content .sidebar { float:right; width:236px;}
+.content .sidebar { float:right; width:200px;}
 ul.sb_menu, ul.ex_menu { margin:0; padding:0; list-style:none; color:#959595;}
 ul.sb_menu li, ul.ex_menu li { margin:0; background:url(images/li.gif) no-repeat 0 12px;}
 ul.sb_menu li { padding:4px 0;}
