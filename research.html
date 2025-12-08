@@ -1,121 +1,237 @@
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-		
-		<!--
-		
-		Design by http://www.bluewebtemplates.com
-		
-			Released for free under a Creative Commons Attribution 3.0 License
-			
-			-->
-			
-			<html xmlns="http://www.w3.org/1999/xhtml">
-			
-			<head>
-			
-			<title>F.Solmon</title>
-			
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-			
-			<link href="style.css" rel="stylesheet" type="text/css" />
-			
-			<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
-			
-			<script type="text/javascript" src="js/cufon-yui.js"></script>
-			
-			<script type="text/javascript" src="js/arial.js"></script>
-			
-			<script type="text/javascript" src="js/cuf_run.js"></script>
-			
-			<!-- CuFon ends -->
-			
-			</head>
-			
-			<body>
-			
-			<div class="main">
-					
-			  <div class="header">
-			
-			    <div class="header_resize">
-			
-			      <div class="logo"><h1><a href="index.html">Fabien Solmon</a></h1></div>
-			
-			      <div class="menu_nav">
-			
-			        <ul>
-			
-			          <li class="active"><a href="index.html">Home</a></li>
-			
-			
-			          <li><a href="research.html">Research</a></li>
-	 
-	                           <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en">Publications</a></li>
-	
-			          <li><a href="model.html">Modelling</a></li>
-			
-	                            <li><a href="data.html">Datashare</a></li>
-			        </ul>
-			
-			      </div>
-			
-			      <div class="clr"></div>
-			
-			    </div>
-			
-			  </div>
-			
-			
-			
-			  <div class="content">
-			
-			    <div class="content_resize">	       
-		   
-			        <div class="article">
-		
-			         <h2><span>Research Topics </span></h2>
-					   <br />
-		            <ul>
-					     
-					     <li style="font-size:20px"> The regional climatic impact of dust and
-				              biomass burning aerosol on thermodynamic and dynamics of Monsoon systems
-				              (West Africa, India) as well as particular sea
-				              basins (Mediterranean,
-				              Caspian).
-				        <br />  <br /> 
-				        <li style="font-size:20px" > The direct and semi-direct effects of African biomass burning aerosol on southern African climate
-				                 and the south eastern Atlantic stratocumulus deck.<a href="pres.html"> Example BBA/WAM here. </a>
-			           <br /> <br />
-					     <li style="font-size:20px"> The tropospheric
-					                                   chemistry over
-					                                   Africa in
-					                                   connection with
-					                                   regional nitrogen
-					                                   cycle,
-					                                   including the impact of biogenic
-					                                      emissions and climate change
-						   <br /> <br />
-				         <li style="font-size:20px" > The  processes impacting the emission and deposition flux of key chemical elements to marine and
-				                 terrestrial ecosystems (North Pacific Ocean, West Africa and the Mediterranean basin).
-			                              <br /> <br />  
-				         <li style="font-size:20px" > Other topics such as pollen health/climate interactions modelling, biogenic emissions and forest canopy modelling ... 
-			            <br /><br />  
-				     </ul>
-                 <h2><span> <img src="images/Logo_INDAAF_hd.jpg" width="60" height="60" /> <a href= https://indaaf.obs-mip.fr/fr/accueil/> The INDAAF International Network
-                  to study Deposition and Atmospheric chemistry in AFrica </a> </span></h2>		
-		
-			        </div>
-			        <br />
-	              <h3> Illustration of coupled processes  <h3>
-				     <img src="images/atm_che_coupling.jpg" width="900" height="600" alt="pix" />
-			
-			    </div>
-			
-			  </div>
-			
-			
-		
-		</body>
-		
-		</html>
-		
-	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.Solmon - Research Topics</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f1f8f4; /* Light green background */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 20px rgba(76, 175, 80, 0.12);
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #388e3c, #66bb6a); /* Light green gradient */
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    .logo a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo a:hover {
+      opacity: 0.8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    /* Main */
+    main {
+      padding: 2rem;
+    }
+
+    .main-content h2 {
+      color: #388e3c; /* Green color */
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #66bb6a; /* Light green accent */
+      padding-bottom: 0.5rem;
+    }
+
+    .main-content h3 {
+      color: #43a047; /* Medium green */
+      margin: 2rem 0 1rem 0;
+      font-size: 1.4rem;
+    }
+
+    ul.topics {
+      list-style: disc inside;
+      margin-top: 1rem;
+    }
+
+    ul.topics li {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    ul.topics a {
+      color: #4caf50; /* Green link color */
+      text-decoration: none;
+    }
+
+    ul.topics a:hover {
+      text-decoration: underline;
+      color: #388e3c;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(76, 175, 80, 0.08); /* Green-tinted shadow */
+      border-left: 4px solid #66bb6a; /* Light green border */
+    }
+
+    .info-card h2 a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    .info-card h2 a:hover {
+      text-decoration: underline;
+      color: #388e3c;
+    }
+
+    img.responsive-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15); /* Green-tinted shadow */
+    }
+
+    /* Animation for smooth loading */
+    .fade-in {
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul {
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+      main {
+        padding: 1rem;
+      }
+      .logo h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      nav a {
+        display: block;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h1><a href="index.html">Fabien Solmon</a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
+            <li><a href="model.html">Modelling</a></li>
+            <li><a href="data.html">Datashare</a></li>
+            <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en" target="_blank" rel="noopener">Publications</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-content fade-in">
+        <div class="info-card">
+          <h2>Research Topics</h2>
+          <ul class="topics">
+            <li>The regional climatic impact of dust and biomass burning aerosol on thermodynamic and dynamics of Monsoon systems (West Africa, India) as well as particular sea basins (Mediterranean, Caspian).</li>
+            <li>The direct and semi-direct effects of African biomass burning aerosol on southern African climate and the south eastern Atlantic stratocumulus deck. <a href="pres.html">Example BBA/WAM here</a>.</li>
+            <li>The tropospheric chemistry over Africa in connection with the regional nitrogen cycle, including the impact of biogenic emissions and climate change.</li>
+            <li>The processes impacting the emission and deposition flux of key chemical elements to marine and terrestrial ecosystems (North Pacific Ocean, West Africa and the Mediterranean basin).</li>
+            <li>Other topics such as pollen health/climate interactions modelling, biogenic emissions, and forest canopy modelling.</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h2>
+            <img src="images/Logo_INDAAF_hd.jpg" alt="INDAAF Logo" style="width:50px; vertical-align:middle; margin-right:10px;">
+            <a href="https://indaaf.obs-mip.fr/fr/accueil/" target="_blank" rel="noopener">
+              The INDAAF International Network to study Deposition and Atmospheric Chemistry in Africa
+            </a>
+          </h2>
+        </div>
+
+        <div class="info-card">
+          <h3>Illustration of Coupled Processes</h3>
+          <img src="images/atm_che_coupling.jpg" alt="Illustration of coupled atmospheric processes" class="responsive-img">
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

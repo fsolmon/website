@@ -1,143 +1,378 @@
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	
-	<!--
-	
-	Design by http://www.bluewebtemplates.com
-	
-		Released for free under a Creative Commons Attribution 3.0 License
-		
-		-->
-		
-		<html xmlns="http://www.w3.org/1999/xhtml">
-		
-		<head>
-		
-		<title>F.Solmon</title>
-		
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-		<link href="style.css" rel="stylesheet" type="text/css" />
-		
-		<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
-		
-		<script type="text/javascript" src="js/cufon-yui.js"></script>
-		
-		<script type="text/javascript" src="js/arial.js"></script>
-		
-		<script type="text/javascript" src="js/cuf_run.js"></script>
-		
-		<!-- CuFon ends -->
-		
-		</head>
-		
-		<body>
-		
-		<div class="main">
-		
-		
-		
-		  <div class="header">
-		
-		    <div class="header_resize">
-		
-		      <div class="logo"><h1><a href="index.html">Fabien Solmon</a></h1></div>
-		
-		      <div class="menu_nav">
-		
-		        <ul>
-		
-		          <li class="active"><a href="index.html">Home</a></li>
-			  <li><a href="research.html">Research</a></li>
-                          <li><a href="model.html">Modelling</a></li>
-		          <li><a href="data.html">Datashare</a></li>
-		          <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en">Publications</a></li>	
-		       
-		        </ul>
-		
-		      </div>
-		
-		      <div class="clr"></div>
-		      
-		    </div>
-		
-		  </div>
-		
-		
-		
-		  <div class="content">
-		
-		    <div class="content_resize">
-		
-		  
-	        
-	                
-	                <img style='position:relative;top100px;left:2px' src="images/enviro2.jpg" width="900" height="270" alt="pix" />
-                   
+Here's the updated HTML with the ETH Zürich logo image added to the Contacts section:
 
- 	                
-	       
-	        
-		      <div class="mainbar">
-		
-	
-		        <div class="article">
-	
-		         <h2><span>Research Scientist </span></h2>
-	
-		             <b><span style="font-size: 20px;">Interactions between atmospheric chemistry, climate and biogeochemical cycles using modelling approaches.</span></b>
-	                 <br /> 
-	                    
-		             <h2><span style="font-size: 20px;"> Short bio </span></h2>
-	                    
-  	          <b><span style="font-size: 14px;">
-		             After a master in Physics and a Ph.D. in
-		             Environmental Sciences (AgroParisTech/UPMC), I
-		             occupied several post-doctoral position in
-		             France, Italy and the US. I am currently working
-		             as a Researcher at Observatoire Midi-Pyrénées
-		             (Toulouse, France). For several years, I have
-		             also worked as a permanent Research Scientist at the Abdus Salam 
-		             International Center for Theoretical Physics (UNESCO, Trieste, Italy) 
-		             for which I am still an active collaborator. My main field of expertise relates to atmospheric physics and chemistry (including some biogeochemical aspects), regional climate modelling, and impact assessments. I use mostly modeling and data analytics approaches. 
-		         </span></b>
-		           </div>
-		        
-	            
-	
-		        </div>
-		        
-		
-		          <h2><span>Contacts</h2>
-		
-		          <ul class="sb_menu">
-		             <span style="font-size: 20px;">
-        
-		            <li><a href="http://www.aero.obs-mip.fr/en/laboratoire-daerologie/"> LAERO </a></li>
-		
-		            <li><a href="http://www.omp.eu"> Observatoire Midi-Pyrénées </a></li>
-		            <li> 16 Avenue Edouard Belin, 31400 Toulouse, France <li>
-		            <li> email: fabien dot solmon at univ-tlse3 .fr </li>
-		            <li> phone: +33 5 61332742 </li>
-		              </span >  
-	          </ul>
-		
-		    
-				        
-		
-		      </div>
-		
-		      <div class="clr"></div>
-		
-		    </div>
-		
-		  </div>
-		
-		</div>
-	
-	</body>
-	
-	</html>
-	
-	
-	
-	  
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.Solmon - Research Scientist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f1f8f4; /* Lighter green background */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.12); /* Softer green-tinted shadow */
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #388e3c, #66bb6a); /* Lighter green gradient */
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo a:hover {
+            opacity: 0.8;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        /* Hero Image */
+        .hero-image {
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Main Content */
+        main {
+            padding: 2rem;
+        }
+
+        .content-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .main-content h2 {
+            color: #388e3c; /* Lighter dark green */
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #66bb6a; /* Lighter green accent */
+            padding-bottom: 0.5rem;
+        }
+
+        .main-content h3 {
+            color: #43a047; /* Lighter medium green */
+            margin: 2rem 0 1rem 0;
+            font-size: 1.4rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #388e3c;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+
+        .bio-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: justify;
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        .main-content a {
+            color: #4caf50; /* Lighter medium green */
+            text-decoration: none;
+        }
+
+        .main-content a:hover {
+            text-decoration: underline;
+            color: #388e3c;
+        }
+
+        /* Sidebar Sections (Contact & Relevant Links) */
+        .sidebar-section {
+            background: #e8f5e9; /* Very light green */
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.15); /* Lighter green-tinted shadow */
+        }
+
+        .sidebar-section h2 {
+            color: #388e3c;
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            text-align: center;
+            border-bottom: 2px solid #66bb6a;
+            padding-bottom: 0.5rem;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #c8e6c9; /* Light green border */
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-list a {
+            color: #43a047;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-list a:hover {
+            color: #388e3c;
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .list-icon {
+            display: inline-block;
+            width: 20px;
+            margin-right: 8px;
+            text-align: center;
+        }
+
+        /* Logo images in links */
+        .logo-img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Cards for better organization */
+        .info-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(76, 175, 80, 0.08); /* Lighter green-tinted shadow */
+            border-left: 4px solid #66bb6a;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                justify-content: center;
+                margin-top: 1rem;
+            }
+
+            .content-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .hero-image {
+                height: 200px;
+            }
+
+            .sidebar-section {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+            }
+
+            .hero-image {
+                height: 150px;
+            }
+
+            .info-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Animation for smooth loading */
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">Fabien Solmon</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="model.html">Modelling</a></li>
+                        <li><a href="data.html">Datashare</a></li>
+                        <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en" target="_blank" rel="noopener">Publications</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <img src="images/enviro2.jpg" alt="Environmental research landscape showing atmospheric and climate interactions" class="hero-image" />
+
+        <main>
+            <div class="content-layout fade-in">
+                <div class="main-content">
+                    <div class="info-card">
+                        <h2>Research Scientist</h2>
+                        <p class="subtitle">
+                            Interactions between atmospheric chemistry, climate and biogeochemical cycles using modelling approaches.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Short Bio</h3>
+                        <p class="bio-text">
+                            After a master in Physics and a Ph.D. in Environmental Sciences (AgroParisTech/UPMC), I occupied several post-doctoral positions in France, Italy and the US. I am currently working as a Researcher at Observatoire Midi-Pyrénées (Toulouse, France). 
+                        </p>
+                        <p class="bio-text">
+                            For several years, I have also worked as a Research Scientist at the Abdus Salam International Center for Theoretical Physics (UNESCO, Trieste, Italy) for which I am still an active collaborator. My main field of expertise relates to atmospheric physics and chemistry (including some biogeochemical aspects), regional climate modelling, and impact assessments. I use mostly modeling and data analytics approaches.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sidebar-container">
+                    <!-- Contacts Section -->
+                    <div class="sidebar-section fade-in">
+                        <h2>Contacts</h2>
+                        <ul class="info-list">
+                            <li>
+                                <a href="https://iac.ethz.ch/" target="_blank" rel="noopener">
+                                    <img src="images/eth_logo.jpeg" alt="ETH Zürich Logo" class="logo-img">
+                                    ETH Zürich - IAC
+                                </a>
+                            </li>
+                            <li>
+                                <div class="list-icon">📍</div>
+                                <span class="contact-info">Universitätstrasse 16<br>8092 Zürich, Switzerland</span>
+                            </li>
+                            <li>
+                                <div class="list-icon">✉️</div>
+                                <span class="contact-info">fabien.solmon at env.ethz.ch</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Relevant Links Section -->
+                    <div class="sidebar-section fade-in">
+                        <h2>Relevant Links</h2>
+                        <ul class="info-list">
+                            <li>
+                                <a href="http://www.omp.eu" target="_blank" rel="noopener">
+                                    <img src="images/omp_logo.png" alt="OMP Logo" class="logo-img">
+                                    Observatoire Midi-Pyrénées
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.ictp.it/" target="_blank" rel="noopener">
+                                    <img src="images/ictp_logo.jpeg" alt="ICTP Logo" class="logo-img">
+                                    ICTP Trieste
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,150 +1,363 @@
-		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	
-	<!--
-	
-	Design by http://www.bluewebtemplates.com
-	
-	Released for free under a Creative Commons Attribution 3.0 License
-	
-	-->
-	
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	
-	<head>
-	
-	<title>F.Solmon</title>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	
-	<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
-	
-	<script type="text/javascript" src="js/cufon-yui.js"></script>
-	
-	<script type="text/javascript" src="js/arial.js"></script>
-	
-	<script type="text/javascript" src="js/cuf_run.js"></script>
-	
-	<!-- CuFon ends -->
-	
-	</head>
-	
-	<body>
-	
-	<div class="main">
-	
-			  <div class="header">
-			
-			    <div class="header_resize">
-			
-			      <div class="logo"><h1><a href="index.html">Fabien Solmon</a></h1></div>
-			
-			      <div class="menu_nav">
-			
-			        <ul>
-			
-			          <li class="active"><a href="index.html">Home</a></li>
-			
-			
-			          <li><a href="research.html">Research</a></li>
-	 
-	                           <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en">Publications</a></li>
-	
-			          <li><a href="model.html">Modelling</a></li>
-			
-	                            <li><a href="data.html">Datashare</a></li>
-			        </ul>
-			
-			      </div>
-			
-			      <div class="clr"></div>
-			
-			    </div>
-			
-			  </div>
-			
-			
-	
-	 
-	  <div class="content">
-	
-	    <div class="content_resize">
-	
-	       
-	      <div class="mainbar">
-	
-	      
-	        <div class="article">
-	         
-	
-	          <h2><span>Modelling activities</span></h2>
-	             
-	              <ul style="font-family:arial;color:black;font-size:16px;">
-	               
-	             Over the years I have used and contributed to developments in different community models including
-	             <a href="http://mesonh.aero.obs-mip.fr/mesonh57">Meso-NH</a>, <a href="https://geoschem.github.io/">GEOS-Chem</a>
-	             and mostly the <a href = "https://github.com/ICTP/RegCM">ICTP RegCM5</a> regional climate
-	             model for processes relevant to climate, biogeochemistry and atmospheric chemistry. 
-	        
-	          <div class="col c1">
-	           <div style="float : right;"><img src="images/coupling2.gif"
-	          
-	           alt="image 1"  width="300" height="200" style="margin-left: 80px;"/>
-	           </div>
-	           <div>   
-	             Some of these developments concerned for instance :   
-	             
-	            <li> The chemistry and aerosol schemes (including dust cycle) 
-	
-	            <li> The interface to the RRTM/McICA radiation scheme
-	
-	            <li> The slab-ocean parameterization
-	
-	            <li> The biogeochemistry interface to the CLM4.5 surface scheme
-	            
-	            <li> Model diagnostics useful to assess perturbation and
-	            feedbacks  
-            	</div>
-	         
-	           
-	          
-	            </ul>
-	        </div>
-	
-	        <div class="col c3">
-	
-	        <h2>Example of simulation </h2>
-	          RegCM simulation of mid-troposphere ozone (ppb) during 
-	          the biomass burning season
-	         <img src="images/animo3.gif" width="900" height="600" alt="pix" />
-	
-	     
-	         <h2>Model data analysis  </h2>
-	
-	         <h3> Explore a poltly based example of <a href="figsliceO3.html"> interactive
-	          RegCM5 output </a>  <h3>
-		 <iframe src=" https://fsolmon.github.io/website/figsliceO3.html"
-	          width="875" height="1000" title="RegCM5 example "></iframe>
-	        </div>
-	
-	        <div class="article">
-	
-	        </div>
-	
-	      </div>
-	
-	  
-	
-	      <div class="clr"></div>
-	
-	    </div>
-	
-	  </div>
-	
-	</div>
-	
-	</body>
-	
-	</html>
-	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.Solmon - Modelling Activities</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f1f8f4; /* Light green background */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 20px rgba(76, 175, 80, 0.12);
+      min-height: 100vh;
+    }
+
+    /* Header Styles */
+    header {
+      background: linear-gradient(135deg, #388e3c, #66bb6a); /* Light green gradient */
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    .logo a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo a:hover {
+      opacity: 0.8;
+    }
+
+    /* Navigation Styles */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    /* Main Content */
+    main {
+      padding: 2rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .main-content h2 {
+      color: #388e3c; /* Green color */
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #66bb6a; /* Light green accent */
+      padding-bottom: 0.5rem;
+    }
+
+    .main-content p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .main-content a {
+      color: #4caf50; /* Green link color */
+      text-decoration: none;
+    }
+
+    .main-content a:hover {
+      text-decoration: underline;
+      color: #388e3c;
+    }
+
+    .development-list {
+      list-style: none;
+      margin: 1rem 0;
+    }
+
+    .development-list li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .development-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #66bb6a; /* Light green arrow */
+      font-weight: bold;
+    }
+
+    /* Sidebar */
+    .sidebar img {
+      width: 100%;
+      height: 100%;
+      align-self: flex-start;
+      margin-top: 3rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.15); /* Green-tinted shadow */
+    }
+
+    /* Full Width Sections */
+    .full-width-section {
+      margin: 3rem 0;
+    }
+
+    .full-width-section h2 {
+      color: #388e3c; /* Green color */
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    .simulation-container {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .simulation-description {
+      margin-bottom: 1rem;
+      font-style: italic;
+      color: #666;
+    }
+
+    /* Two images side by side */
+    .simulation-images {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .simulation-images img {
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(76, 175, 80, 0.15); /* Green-tinted shadow */
+      height: auto;
+    }
+
+    .simulation-images img:first-child {
+      width: 50%;
+    }
+
+    .simulation-images img:last-child {
+      width: 50%;
+    }
+
+    /* Interactive Section */
+    .interactive-section {
+      background: #e8f5e9; /* Light green background */
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+      box-shadow: 0 2px 10px rgba(76, 175, 80, 0.1);
+    }
+
+    .interactive-section h3 {
+      color: #388e3c; /* Green color */
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .interactive-section a {
+      color: #4caf50; /* Green link color */
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .interactive-section a:hover {
+      text-decoration: underline;
+      color: #388e3c;
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(76, 175, 80, 0.15); /* Green-tinted shadow */
+    }
+
+    /* Animation for smooth loading */
+    .fade-in {
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .logo h1 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        height: 600px;
+      }
+
+      .simulation-images {
+        flex-direction: column;
+      }
+
+      .simulation-images img {
+        width: 100% !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav a {
+        display: block;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h1><a href="index.html">Fabien Solmon</a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="model.html" class="active">Modelling</a></li>
+            <li><a href="data.html">Datashare</a></li>
+            <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en" target="_blank" rel="noopener">Publications</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="content-grid fade-in">
+        <div class="main-content">
+          <h2>Modelling Activities</h2>
+          <p>
+            Over the years I have used and contributed to developments in different community models including
+            <a href="http://mesonh.aero.obs-mip.fr/mesonh57" target="_blank" rel="noopener">Meso-NH</a>, 
+            <a href="https://geoschem.github.io/" target="_blank" rel="noopener">GEOS-Chem</a>
+            and mostly the <a href="https://github.com/ICTP/RegCM" target="_blank" rel="noopener">ICTP RegCM5</a> 
+            regional climate model for processes relevant to climate, biogeochemistry and atmospheric chemistry.
+          </p>
+          
+          <p>Some of these developments concerned for instance:</p>
+          <ul class="development-list">
+            <li>The chemistry and aerosol schemes (including dust cycle)</li>
+            <li>The interface to the RRTM/McICA radiation scheme</li>
+            <li>The slab-ocean parameterization</li>
+            <li>The biogeochemistry interface to the CLM4.5 surface scheme</li>
+            <li>Model diagnostics useful to assess perturbation and feedbacks</li>
+          </ul>
+        </div>
+        <div class="sidebar">
+          <img src="images/coupling2.gif" alt="Model coupling diagram showing atmospheric-ocean interactions" />
+        </div>
+      </div>
+
+      <section class="full-width-section fade-in">
+        <div class="simulation-container">
+          <h2>Example of Simulation</h2>
+          <p class="simulation-description">
+            RegCM simulation of mid-troposphere ozone (ppb) during the biomass burning season
+          </p>
+
+          <!-- Two side-by-side images -->
+          <div class="simulation-images">
+            <img src="images/animo3.gif" alt="Simulation animation 1">
+            <img src="images/dust_rotating.gif" alt="Simulation animation 2">
+          </div>
+        </div>
+      </section>
+
+      <section class="interactive-section fade-in">
+        <h3>Model Data Analysis</h3>
+        <p style="text-align: center; margin-bottom: 1.5rem;">
+          Explore a Plotly-based example of 
+          <a href="figsliceO3.html" target="_blank" rel="noopener">interactive RegCM5 output</a>
+        </p>
+        <iframe 
+          src="https://fsolmon.github.io/website/figsliceO3.html"
+          title="Interactive RegCM5 output visualization"
+          loading="lazy">
+          <p>Your browser does not support iframes. Please visit the 
+          <a href="https://fsolmon.github.io/website/figsliceO3.html" target="_blank" rel="noopener">interactive visualization</a> directly.</p>
+        </iframe>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

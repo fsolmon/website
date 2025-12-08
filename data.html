@@ -1,136 +1,306 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	
-	<!--
-	
-	Design by http://www.bluewebtemplates.com
-	
-		Released for free under a Creative Commons Attribution 3.0 License
-		
-		-->
-		
-		<html xmlns="http://www.w3.org/1999/xhtml">
-		
-		<head>
-		
-		<title>F.Solmon</title>
-		
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-		<link href="style.css" rel="stylesheet" type="text/css" />
-		
-		<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
-		
-		<script type="text/javascript" src="js/cufon-yui.js"></script>
-		
-		<script type="text/javascript" src="js/arial.js"></script>
-		
-		<script type="text/javascript" src="js/cuf_run.js"></script>
-		
-		<!-- CuFon ends -->
-		
-		</head>
-		
-		<body>
-		
-		<div class="main">
-				
-		  <div class="header">
-		
-		    <div class="header_resize">
-		
-		      <div class="logo"><h1><a href="index.html">Fabien Solmon</a></h1></div>
-		
-		      <div class="menu_nav">
-		
-		        <ul>
-		
-		          <li class="active"><a href="index.html">Home</a></li>
-		
-		
-		          <li><a href="research.html">Research</a></li>
- 
-                           <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en">Publications</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.Solmon - Data Share</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-		          <li><a href="model.html">Modelling</a></li>
-		
-                            <li><a href="data.html">Datashare</a></li>
-		        </ul>
-		
-		      </div>
-		
-		      <div class="clr"></div>
-		
-		    </div>
-		
-		  </div>
-		
-		
-		
-		  <div class="content">
-		
-		    <div class="content_resize">	       
-	   
-		        <div class="article">
-	
-		         <h2><span> <a href="https://doi.org/10.25326/383">  Monthly aerosol
-		         optical properties from MERRA-2 reanalysis </a> </span></h2>
-	
-			     <br />
-                             <ul>
-			     
-			     <li style="font-size:20px"> Global distribution
-	                      of monthly aerosol optical properties
-	                      (extinction, single scattering albedo and
-	                      assymetry parameter) created from the NASA
-	                      MERRA-2 3-hourly reanalysis profiles of aerosol
-	                      mixing ratio and relative humidity, and MERRA-2
-	                      species level aerosol optical properties for
-	                      different humidities and spectral bands. The
-	                      data are meant to be used in climate model or
-	                      for other applications requiring aerosol optical
-	                      properties. Click on the link
-	                      to <a href="https://doi.org/10.25326/383">ACCESS DATA</a>
-	                      <br /> 		         
-                                <iframe src=" https://fsolmon.github.io/website/figsliceEXTGLOB.html"
-          width="875" height="1000" title="MERRA2 derived extinction "></iframe>
-	                     </ul>
- <br /> 
-                             <h2><span> <a href= "https://github.com/fsolmon ">
-                             Model post/re Proc scripts  </a> </span></h2>
-                             <br />
-                             <ul>
-			     
-			       <li style="font-size:20px">
-				 Python Scripts based on python xarray that could be
-	                      usefull for model post-proc, building optical
-	                      properties data base, etc ... (redirect to
-	                      github personal page).
-	                      <br /> 		         
-	                     </ul>
- <br /> 
-                             <h2><span> <a href= " ">
-                             Teaching material, hands on    </a> </span></h2>
-                             <br />
-                             <ul>
-			     
-			       <li style="font-size:20px">
-				 Notebooks on  atmospheric dispersion and chemistry
-	                      modelling 
-	                      <br /> 		         
-	                     </ul>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f1f8f4; /* Light green background */
+    }
 
-			     </div>
-		        
-	       
-		
-		    </div>
-		
-		  </div>
-		
-		
-	
-	</body>
-	
-	</html>
-	
-	
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 20px rgba(76, 175, 80, 0.12);
+      min-height: 100vh;
+    }
+
+    /* Header Styles */
+    header {
+      background: linear-gradient(135deg, #388e3c, #66bb6a); /* Light green gradient */
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    .logo a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo a:hover {
+      opacity: 0.8;
+    }
+
+    /* Navigation Styles */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    /* Main Content */
+    main {
+      padding: 2rem;
+    }
+
+    .page-title {
+      color: #388e3c;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      border-bottom: 3px solid #66bb6a;
+      padding-bottom: 1rem;
+    }
+
+    .data-section {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(76, 175, 80, 0.08);
+      border-left: 4px solid #66bb6a;
+    }
+
+    .data-section h2 {
+      color: #388e3c;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    .data-section h2 a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    .data-section h2 a:hover {
+      text-decoration: underline;
+      color: #388e3c;
+    }
+
+    .data-section p,
+    .data-section li {
+      font-size: 1.05rem;
+      color: #444;
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .data-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .data-section ul li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .data-section ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #66bb6a;
+      font-weight: bold;
+    }
+
+    .data-section a {
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .data-section a:hover {
+      text-decoration: underline;
+      color: #388e3c;
+    }
+
+    /* Access Data Button */
+    .access-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, #388e3c, #66bb6a);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin: 1rem 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .access-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    }
+
+    /* Iframe styling */
+    .iframe-container {
+      margin: 1.5rem 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(76, 175, 80, 0.15);
+    }
+
+    iframe {
+      width: 100%;
+      height: 1000px;
+      border: none;
+    }
+
+    /* Animation for smooth loading */
+    .fade-in {
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .logo h1 {
+        font-size: 1.5rem;
+      }
+
+      .data-section {
+        padding: 1.5rem;
+      }
+
+      iframe {
+        height: 600px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav a {
+        display: block;
+        text-align: center;
+      }
+
+      .page-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h1><a href="index.html">Fabien Solmon</a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="model.html">Modelling</a></li>
+            <li><a href="data.html" class="active">Datashare</a></li>
+            <li><a href="http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en" target="_blank" rel="noopener">Publications</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page-title fade-in">Data Share & Resources</h1>
+
+      <!-- MERRA-2 Data Section -->
+      <section class="data-section fade-in">
+        <h2>
+          <a href="https://doi.org/10.25326/383" target="_blank" rel="noopener">
+            Monthly Aerosol Optical Properties from MERRA-2 Reanalysis
+          </a>
+        </h2>
+        
+        <p>
+          Global distribution of monthly aerosol optical properties (extinction, single scattering albedo and 
+          asymmetry parameter) created from the NASA MERRA-2 3-hourly reanalysis profiles of aerosol mixing 
+          ratio and relative humidity, and MERRA-2 species level aerosol optical properties for different 
+          humidities and spectral bands.
+        </p>
+        
+        <p>
+          The data are meant to be used in climate models or for other applications requiring aerosol optical properties.
+        </p>
+
+        <a href="https://doi.org/10.25326/383" target="_blank" rel="noopener" class="access-button">
+          📊 ACCESS DATA
+        </a>
+
+        <div class="iframe-container">
+          <iframe 
+            src="https://fsolmon.github.io/website/figsliceEXTGLOB.html"
+            title="MERRA2 derived extinction visualization"
+            loading="lazy">
+            <p>Your browser does not support iframes. Please visit the 
+            <a href="https://fsolmon.github.io/website/figsliceEXTGLOB.html" target="_blank" rel="noopener">
+            visualization</a> directly.</p>
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Model Scripts Section -->
+      <sec
