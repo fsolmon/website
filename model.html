@@ -150,76 +150,56 @@
 
     .full-width-section h2 {
       color: #388e3c; /* Green color */
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       font-size: 1.6rem;
       text-align: center;
     }
 
-    .simulation-container {
-      text-align: center;
-      margin-bottom: 2rem;
+    /* Contribution cards (RegCM / GEOS-Chem) */
+    .activity-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
 
-    .simulation-description {
-      margin-bottom: 1rem;
-      font-style: italic;
-      color: #666;
-    }
-
-    /* Two images side by side */
-    .simulation-images {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .simulation-images img {
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(76, 175, 80, 0.15); /* Green-tinted shadow */
-      height: auto;
-    }
-
-    .simulation-images img:first-child {
-      width: 50%;
-    }
-
-    .simulation-images img:last-child {
-      width: 50%;
-    }
-
-    /* Interactive Section */
-    .interactive-section {
+    .activity-card {
       background: #e8f5e9; /* Light green background */
-      padding: 2rem;
       border-radius: 10px;
-      margin: 2rem 0;
+      padding: 1.5rem 2rem;
       box-shadow: 0 2px 10px rgba(76, 175, 80, 0.1);
+      display: flex;
+      flex-direction: column;
     }
 
-    .interactive-section h3 {
-      color: #388e3c; /* Green color */
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .interactive-section a {
-      color: #4caf50; /* Green link color */
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .interactive-section a:hover {
-      text-decoration: underline;
+    .activity-card h3 {
       color: #388e3c;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
     }
 
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(76, 175, 80, 0.15); /* Green-tinted shadow */
+    .activity-card p {
+      margin-bottom: 1rem;
+    }
+
+    .activity-card .development-list {
+      flex-grow: 1;
+    }
+
+    .activity-card .view-link {
+      display: inline-block;
+      margin-top: auto;
+      padding: 0.5rem 1.2rem;
+      background: #388e3c;
+      color: white !important;
+      text-decoration: none !important;
+      border-radius: 5px;
+      font-weight: 500;
+      align-self: flex-start;
+      transition: background-color 0.3s ease;
+    }
+
+    .activity-card .view-link:hover {
+      background: #2e7031;
     }
 
     /* Animation for smooth loading */
@@ -245,7 +225,8 @@
         gap: 1rem;
       }
 
-      .content-grid {
+      .content-grid,
+      .activity-grid {
         grid-template-columns: 1fr;
       }
 
@@ -255,18 +236,6 @@
 
       .logo h1 {
         font-size: 1.5rem;
-      }
-
-      iframe {
-        height: 600px;
-      }
-
-      .simulation-images {
-        flex-direction: column;
-      }
-
-      .simulation-images img {
-        width: 100% !important;
       }
     }
 
@@ -308,20 +277,11 @@
           <h2>Modelling Activities</h2>
           <p>
             Over the years I have used and contributed to developments in different community models including
-            <a href="http://mesonh.aero.obs-mip.fr/mesonh57" target="_blank" rel="noopener">Meso-NH</a>, 
+            <a href="http://mesonh.aero.obs-mip.fr/mesonh57" target="_blank" rel="noopener">Meso-NH</a>,
             <a href="https://geoschem.github.io/" target="_blank" rel="noopener">GEOS-Chem</a>
-            and mostly the <a href="https://github.com/ICTP/RegCM" target="_blank" rel="noopener">ICTP RegCM5</a> 
+            and mostly the <a href="https://github.com/ICTP/RegCM" target="_blank" rel="noopener">ICTP RegCM5</a>
             regional climate model for processes relevant to climate, biogeochemistry and atmospheric chemistry.
           </p>
-          
-          <p>Some of these developments concerned for instance:</p>
-          <ul class="development-list">
-            <li>The chemistry and aerosol schemes (including dust cycle)</li>
-            <li>The interface to the RRTM/McICA radiation scheme</li>
-            <li>The slab-ocean parameterization</li>
-            <li>The biogeochemistry interface to the CLM4.5 surface scheme</li>
-            <li>Model diagnostics useful to assess perturbation and feedbacks</li>
-          </ul>
         </div>
         <div class="sidebar">
           <img src="images/coupling2.gif" alt="Model coupling diagram showing atmospheric-ocean interactions" />
@@ -329,33 +289,32 @@
       </div>
 
       <section class="full-width-section fade-in">
-        <div class="simulation-container">
-          <h2>Example of Simulation</h2>
-          <p class="simulation-description">
-            RegCM simulation of mid-troposphere ozone (ppb) during the biomass burning season - Dust aod during June 2020 'Godzilla' event   
-          </p>
+        <h2>Model Contributions</h2>
+        <div class="activity-grid">
+          <div class="activity-card">
+            <h3>Contribution to RegCM</h3>
+            <p>Development work on the <a href="https://github.com/ICTP/RegCM" target="_blank" rel="noopener">ICTP RegCM5</a> regional climate model, including:</p>
+            <ul class="development-list">
+              <li>The chemistry and aerosol schemes (including dust cycle)</li>
+              <li>The interface to the RRTM/McICA radiation scheme</li>
+              <li>The slab-ocean parameterization</li>
+              <li>The biogeochemistry interface to the CLM4.5 surface scheme</li>
+              <li>Model diagnostics useful to assess perturbation and feedbacks</li>
+            </ul>
+            <a class="view-link" href="regcm.html">View RegCM examples →</a>
+          </div>
 
-          <!-- Two side-by-side images -->
-          <div class="simulation-images">
-            <img src="images/animo3.gif" alt="Simulation animation 1">
-            <img src="images/dust_rotating.gif" alt="Simulation animation 2">
+          <div class="activity-card">
+            <h3>Contribution to GEOS-Chem</h3>
+            <p>
+              Work on the <a href="https://geoschem.github.io/" target="_blank" rel="noopener">GEOS-Chem</a>
+              aerosol simulations (MAM microphysics vs. the standard aerosol scheme), including
+              cubed-sphere regridding and visualization tools for comparing and exploring aerosol
+              fields across the two schemes.
+            </p>
+            <a class="view-link" href="gc_sphere_MAM_c48.html">View GEOS-Chem example →</a>
           </div>
         </div>
-      </section>
-
-      <section class="interactive-section fade-in">
-        <h3></h3>
-        <p style="text-align: center; margin-bottom: 1.5rem;">
-         
-          <a href="figsliceO3.html" target="_blank" rel="noopener">interactive RegCM5 output</a>
-        </p>
-        <iframe 
-          src="https://fsolmon.github.io/website/figsliceO3.html"
-          title="Simulated ozone distribution JJA 2012"
-          loading="lazy">
-          <p>Your browser does not support iframes. Please visit the 
-          <a href="https://fsolmon.github.io/website/figsliceO3.html" target="_blank" rel="noopener">interactive visualization</a> directly.</p>
-        </iframe>
       </section>
     </main>
   </div>
