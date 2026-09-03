@@ -317,10 +317,18 @@
             <h3>Contribution to GEOS-Chem</h3>
             <img src="images/mam_gc_cpling.png" alt="MAM4-MOSAIC coupling with GEOS-Chem/GCHP schematic">
             <p>
-              Work on the <a href="https://geoschem.github.io/" target="_blank" rel="noopener">GEOS-Chem</a>
-              aerosol simulations (MAM microphysics vs. the standard aerosol scheme), including
-              cubed-sphere regridding and visualization tools for comparing and exploring aerosol
-              fields across the two schemes.
+              The Modal Aerosol Model (Liu et al., 2012), interacting with the
+              Model for Simulating Aerosol Interactions and Chemistry (Zaveri
+              et al., 2008), is coupled with the
+              <a href="https://geoschem.github.io/" target="_blank" rel="noopener">GEOS-Chem</a>
+              chemical transport model. This enables a size-resolved representation of aerosol
+              processes at a lower numerical cost relative to sectional approaches, while also
+              offering compatibility for coupling with GCMs such as the Community Earth System
+              Model. In our workflow, MAM4-MOSAIC is a library derived from the code version
+              reported by Wu et al. (2024) E3SM implementation. It has been coupled with
+              GEOS-Chem's chemistry, emissions, transport, deposition, and radiative processes
+              (including RRTMG and Cloud-J). A box model version, operated through a Python Dash
+              interface, has also been developed for ideal cases.
             </p>
             <a class="view-link" href="gc_sphere_MAM_c48.html">View GEOS-Chem example →</a>
           </div>
