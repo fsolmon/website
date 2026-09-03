@@ -298,15 +298,23 @@
             <h3>Contribution to GEOS-Chem</h3>
             <img src="images/mam_gc_cpling.png" alt="MAM4-MOSAIC coupling with GEOS-Chem/GCHP schematic">
             <p>
-              The Modal Aerosol Model (Liu et al., 2012), interacting with the
-              Model for Simulating Aerosol Interactions and Chemistry (Zaveri
-              et al., 2008), is coupled with the
+              The Modal Aerosol Model
+              (<a href="https://doi.org/10.5194/gmd-5-709-2012" target="_blank" rel="noopener"
+                 title="Liu, X., Easter, R. C., Ghan, S. J., Zaveri, R., et al.: Toward a minimal representation of aerosols in climate models: description and evaluation in the Community Atmosphere Model CAM5, Geosci. Model Dev., 5, 709-739, 2012.">Liu et al., 2012</a>),
+              interacting with the
+              Model for Simulating Aerosol Interactions and Chemistry
+              (<a href="https://doi.org/10.1029/2007JD008782" target="_blank" rel="noopener"
+                 title="Zaveri, R. A., Easter, R. C., Fast, J. D., and Peters, L. K.: Model for Simulating Aerosol Interactions and Chemistry (MOSAIC), J. Geophys. Res., 113, D13204, 2008.">Zaveri et al., 2008</a>),
+              is coupled with the
               <a href="https://geoschem.github.io/" target="_blank" rel="noopener">GEOS-Chem</a>
               chemical transport model. This enables a size-resolved representation of aerosol
               processes at a lower numerical cost relative to sectional approaches, while also
               offering compatibility for coupling with GCMs such as the Community Earth System
               Model. In our workflow, MAM4-MOSAIC is a library derived from the code version
-              reported by Wu et al. (2024) E3SM implementation. It has been coupled with
+              reported by
+              <a href="https://doi.org/10.1029/2022MS003157" target="_blank" rel="noopener"
+                 title="Wu, M., Wang, H., Easter, R. C., Lu, Z., Liu, X., Singh, B., et al.: Development and evaluation of E3SM-MOSAIC: Spatial distributions and radiative effects of nitrate aerosol, J. Adv. Model. Earth Syst., 14, e2022MS003157, 2022.">Wu et al. (2022)</a>
+              E3SM implementation. It has been coupled with
               GEOS-Chem's chemistry, emissions, transport, deposition, and radiative processes
               (including RRTMG and Cloud-J). A box model version, operated through a Python Dash
               interface, has also been developed for ideal cases.
