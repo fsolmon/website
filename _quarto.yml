@@ -1,0 +1,35 @@
+project:
+  type: website
+  resources:
+    - "figslice*.html"
+    - "gc_dev.html"
+    - "gc_sphere_MAM_c48.html"
+    - "google94a6fa125fb95425.html"
+    - "images/solmon_CV.pdf"
+
+website:
+  title: "Fabien Solmon"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Modelling
+        href: model.qmd
+      - text: Datashare
+        href: data.qmd
+      - text: Publications
+        href: "http://scholar.google.com/citations?user=QcqTcngAAAAJ&hl=en"
+        target: _blank
+
+format:
+  html:
+    theme: [flatly, theme.scss]
+    css: styles.css
+    title-block-banner: false
+    page-layout: article
+    toc: false
+    anchor-sections: false
+    grid:
+      body-width: 1100px

@@ -1,0 +1,322 @@
+/* Fabien Solmon site — scientific/technical theme.
+   Base typography/colors come from the flatly Bootswatch theme + theme.scss;
+   this file covers the custom card/list classes used across pages. */
+
+/* Each page writes its own heading as the first thing in the body, so
+   Quarto's automatic title block (which prints the frontmatter `title` as
+   an <h1> regardless of title-block-banner) would just duplicate it. */
+#title-block-header {
+  display: none;
+}
+
+main.content {
+  padding: 2rem 0;
+}
+
+.main-content h2,
+.info-card h2,
+.data-section h2,
+.full-width-section h2 {
+  color: #1b8a5a;
+  margin-bottom: 1rem;
+}
+
+.main-content h3,
+.activity-card h3 {
+  color: #1b8a5a;
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 1.3rem;
+}
+
+/* --- Hero image (home page) --- */
+.hero-image {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+/* --- Home page layout --- */
+.content-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1b8a5a;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Cards (info-card / data-section / activity-card) --- */
+.info-card,
+.data-section,
+.activity-card,
+.interactive-section {
+  background: #ffffff;
+  border: 1px solid #dfe3e6;
+  border-left: 3px solid #1b8a5a;
+  padding: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.sidebar-section {
+  background: #fafbfa;
+  border: 1px solid #e5e8e7;
+  border-top: 3px solid #1b8a5a;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-section h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: #263238;
+}
+
+.info-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.info-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e6e8;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo-img {
+  height: 34px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+.logo-img-lg {
+  height: 50px;
+}
+
+.contact-icon {
+  display: inline-block;
+  width: 1.1em;
+  margin-right: 10px;
+  text-align: center;
+  color: #1b8a5a;
+}
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.activity-card .development-list {
+  flex-grow: 1;
+}
+
+/* --- Research topics list --- */
+.topics ul {
+  list-style: disc inside;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+.topics li {
+  margin-bottom: 1rem;
+  font-size: 1.02rem;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* --- Development list (arrow bullets) --- */
+.development-list ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding-left: 0;
+}
+
+.development-list li {
+  padding: 0.4rem 0;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.development-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #1b8a5a;
+  font-weight: bold;
+}
+
+.full-width-section {
+  margin: 2.5rem 0;
+}
+
+.full-width-section > h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.view-link {
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.5rem 1.2rem;
+  background: #1b8a5a;
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+.view-link:hover {
+  background: #146b46;
+}
+
+/* --- RegCM examples page --- */
+.breadcrumb {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.simulation-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.simulation-description {
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #666;
+}
+
+.simulation-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.simulation-images img {
+  height: auto;
+  width: 50%;
+}
+
+.interactive-section {
+  text-align: center;
+}
+
+/* --- Datashare page --- */
+.data-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.data-section li {
+  padding-left: 1.4rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.data-section li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #1b8a5a;
+  font-weight: bold;
+}
+
+.access-button {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  background: #1b8a5a;
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  transition: background-color 0.2s ease;
+}
+
+.access-button:hover {
+  background: #146b46;
+}
+
+.iframe-container {
+  margin: 1.5rem 0;
+  border: 1px solid #dfe3e6;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card,
+  .data-section,
+  .activity-card,
+  .interactive-section,
+  .sidebar-section {
+    padding: 1.25rem;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+
+  iframe {
+    height: 450px;
+  }
+
+  .simulation-images {
+    flex-direction: column;
+  }
+
+  .simulation-images img {
+    width: 100% !important;
+  }
+}

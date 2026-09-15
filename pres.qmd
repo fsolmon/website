@@ -1,0 +1,14 @@
+---
+title: "Biomass Burning and WAM Interaction"
+---
+
+::: {.main-content .fade-in}
+## Biomass burning and WAM interaction
+
+```{=html}
+<video width="900" height="700" controls>
+  <source src="images/solmon_egu2022_aero.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
+:::

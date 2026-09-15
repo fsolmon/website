@@ -1,0 +1,28 @@
+---
+title: "Data Share & Resources"
+---
+
+::: {.data-section .fade-in}
+## [Monthly Aerosol Optical Properties from MERRA-2 Reanalysis](https://doi.org/10.25326/383){target="_blank" rel="noopener"}
+
+Global distribution of monthly aerosol optical properties (extinction, single scattering albedo and
+asymmetry parameter) created from the NASA MERRA-2 3-hourly reanalysis profiles of aerosol mixing
+ratio and relative humidity, and MERRA-2 species level aerosol optical properties for different
+humidities and spectral bands.
+
+The data are meant to be used in climate models or for other applications requiring aerosol optical properties.
+
+[ACCESS DATA](https://doi.org/10.25326/383){target="_blank" rel="noopener" .access-button}
+
+::: {.iframe-container}
+```{=html}
+<iframe
+  src="https://fsolmon.github.io/website/figsliceEXTGLOB.html"
+  title="MERRA2 derived extinction visualization"
+  loading="lazy">
+  <p>Your browser does not support iframes. Please visit the
+  <a href="https://fsolmon.github.io/website/figsliceEXTGLOB.html" target="_blank" rel="noopener">visualization</a> directly.</p>
+</iframe>
+```
+:::
+:::

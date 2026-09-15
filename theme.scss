@@ -1,0 +1,32 @@
+/*-- scss:defaults --*/
+$primary: #1b8a5a;
+$link-color: $primary;
+$body-color: #2b2f33;
+$navbar-bg: #263238;
+$navbar-fg: #ffffff;
+$navbar-hl: #5fd3a2;
+$border-radius: 0;
+$card-border-radius: 0;
+
+/*-- scss:rules --*/
+.navbar {
+  box-shadow: none;
+}
+
+.navbar .nav-link {
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  border-bottom-color: $navbar-hl;
+  color: $navbar-hl !important;
+}
+
+code {
+  color: #ad3b4c;
+}
